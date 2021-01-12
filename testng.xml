@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="classes">
   <test thread-count="5" name="Test">
     <classes>
-      <!--<class name="com.atmecs.openmrs.automation.testscripts.TestScript"/> -->
+      <class name="com.atmecs.openmrs.automation.testscripts.TestScript"/>
       <class name="com.atmecs.openmrs.automation.testscripts.RegisterTest"/>
     </classes>
   </test> <!-- Test -->

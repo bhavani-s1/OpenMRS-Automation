@@ -123,12 +123,18 @@ public class Registerpage {
 		log.info("Enter confirmbutton");
 
 		HelperClass.clickAction(driver, property.getProperty("loc_confirmbutton"));
+		
 		log.info("Clicking  homepageicon");
 
+		Thread.sleep(2000);
+		
 		HelperClass.clickAction(driver, property.getProperty("loc_homepageicon"));
+		
+		
 		log.info("Clicking  patient record");
 
 		HelperClass.clickAction(driver, property.getProperty("loc_findpatientrecord"));
+		
 		log.info("Enter patient search");
 
 		HelperClass.sendText(driver, property.getProperty("loc_patientsearch"), Userdata.getProperty("user_id"));
