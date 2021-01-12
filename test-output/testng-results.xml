@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9908" started-at="2021-01-11T17:53:25 IST" finished-at="2021-01-11T17:53:35 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="9908" started-at="2021-01-11T17:53:25 IST" finished-at="2021-01-11T17:53:35 IST">
+      <class name="com.atmecs.openmrs.automation.testscripts.TestScript">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.atmecs.openmrs.automation.testscripts.TestScript@2eda0940]" name="invokeBrowser" is-config="true" duration-ms="8634" started-at="2021-01-11T17:53:26 IST" finished-at="2021-01-11T17:53:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.openmrs.automation.testscripts.TestScript@2eda0940]" name="login" duration-ms="38" started-at="2021-01-11T17:53:34 IST" data-provider="getExcelData" finished-at="2021-01-11T17:53:34 IST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot find elements when the XPath is null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
+at org.openqa.selenium.By.xpath(By.java:92)
+at com.atmecs.openmrs.automation.helper.HelperClass.sendText(HelperClass.java:18)
+at com.atmecs.openmrs.automation.pages.OpenMrsHomePage.login(OpenMrsHomePage.java:25)
+at com.atmecs.openmrs.automation.testscripts.TestScript.login(TestScript.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.atmecs.openmrs.automation.testscripts.TestScript@2eda0940]" name="closeBrowser" is-config="true" duration-ms="482" started-at="2021-01-11T17:53:34 IST" finished-at="2021-01-11T17:53:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.atmecs.openmrs.automation.testscripts.TestScript -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
